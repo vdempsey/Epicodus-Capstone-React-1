@@ -14,7 +14,9 @@
   "dependencies": {
     "prop-types": "^15.5.10",
     "react": "^15.5.4",
+    "react-box-sizing": "0.0.2",
     "react-dom": "^15.5.4",
+    "react-global-style": "^0.2.1",
     "react-router-dom": "^4.0.0",
     "styled-jsx": "^2.2.1",
     "webfontloader": "^1.6.28"

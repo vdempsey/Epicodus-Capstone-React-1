@@ -14,7 +14,7 @@ function Header(){
     backgroundColor: '#404040',
     fontFamily: '"Open Sans", sans-serif',
     paddingTop: '50px',
-    color: '#fff'
+    color: '#fff',
   };
   let linkColorStyles = {
     color: '#fff',
