@@ -1,5 +1,4 @@
 import React from 'react';
-import { BorderBox } from 'react-box-sizing';
 import Header from './Header';
 import AboutUs from './AboutUs';
 import Splash from './Splash';
@@ -12,15 +11,7 @@ import {  Switch, Route } from 'react-router-dom';
 
 function App(){
   return(
-    <BorderBox>
       <div>
-        <style jsx>{`
-          html, body {
-            border-sizing: border-box;
-            margin: 0;
-            padding: 0;
-          }
-        `}</style>
         <Header/>
         <Switch>
           <Route exact path='/' component={Splash} />
@@ -30,7 +21,6 @@ function App(){
           <Route component={Error404} />
         </Switch>
       </div>
-    </BorderBox>
   );
 }
 
