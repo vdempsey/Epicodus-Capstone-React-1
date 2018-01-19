@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from './Header';
-import AboutUs from './AboutUs';
+import TestimonialList from './TestimonialList';
 import Splash from './Splash';
 import Contact from './Contact';
 import Email from './Email';
@@ -15,7 +15,7 @@ function App(){
         <Header/>
         <Switch>
           <Route exact path='/' component={Splash} />
-          <Route path='/AboutUs' component={AboutUs} />
+          <Route path='/TestimonialList' component={TestimonialList} />
           <Route exact path='/Contact' component={Contact} />
           <Route path='/Contact/Email' component={Email} />
           <Route component={Error404} />

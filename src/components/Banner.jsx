@@ -1,37 +1,46 @@
 import React from 'react';
-import banner from '../assets/images/banner-home.jpg';
+import banner from '../assets/images/index-logo.gif';
+import WebFont from 'webfontloader';
 
+WebFont.load({
+  google: {
+    families: ['Open Sans :300,400,700', 'sans-serif']
+  }
+});
 
 function Banner(props){
 
   const styles = {
     parentStyles: {
-      position: 'relative',
-      width: '100vw',
+      width: '100%',
       textAlign: 'center',
-      backgroundImage: 'url('+banner+')',
       backgroundRepeat: 'no-repeat',
-      backgroundSize: 'cover',
       backgroundPosition: 'center',
-      height: '500px'
+      backgroundColor: '#414142',
+      paddingTop: '40px'
     },
     childStyles: {
-      position: 'absolute',
-      top: '30%',
-      left: '0',
-      right: '0',
-      zIndex: '1',
-      color: '#000',
-      fontSize: '120px',
+      fontSize: '25px',
       textAlign: 'center',
-      color: 'rgba(255, 255, 255, 0.8)'
+      fontFamily: '"Open Sans", sans-serif',
+      fontWeight: '300',
+      color: 'rgba(255, 255, 255, 0.8)',
+      paddingBottom: '20px',
     }
   };
 
 
   return(
     <div style={styles.parentStyles}>
-      <h1 style={styles.childStyles}>{props.bannerText}</h1>
+      <style jsx>{`
+
+        img {
+          width: 300px;
+        }
+
+      `}</style>
+      <img src={banner} />
+      <p style={styles.childStyles}>{props.bannerText}</p>
     </div>
   );
 }
