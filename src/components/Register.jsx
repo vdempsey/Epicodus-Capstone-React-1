@@ -1,10 +1,10 @@
 import React from 'react';
-import Banner from './Banner';
-import TestimonialList from './TestimonialList';
+import BannerTwo from './BannerTwo';
+import RegisterForm from './RegisterForm';
 import Menu from './Menu';
 
 
-function Splash(){
+function Register(){
 
   const styles = {
     fontSize: '10px',
@@ -23,11 +23,11 @@ function Splash(){
   };
   return (
     <div style={mainLayoutComponentStyles}>
-      <Banner bannerText='Activate your 8 to 5' />
+      <BannerTwo bannerText='Activate your 8 to 5' />
       <Menu />
-      <TestimonialList />
+      <RegisterForm />
     </div>
   );
 }
 
-export default Splash;
+export default Register;

@@ -1,6 +1,7 @@
 import React from 'react';
 import WebFont from 'webfontloader';
 import LogIn from './LogIn';
+import Register from './Register';
 import { Link } from 'react-router-dom';
 
 WebFont.load({
@@ -31,13 +32,13 @@ function Menu(){
   };
   let menuLiStyles = {
     width: '20%',
-  }
+  };
   return (
     <div style={menuContainerStyles}>
       <div style={menuUlStyles}>
         <div style={menuLiStyles}><Link style={linkColorStyles} to='/'>WHY</Link></div>
         <div style={menuLiStyles}><Link style={linkColorStyles} to='/TestimonialList'>HOW</Link></div>
-        <div style={menuLiStyles}><Link style={linkColorStyles} to='/Contact'>REGISTER</Link></div>
+        <div style={menuLiStyles}><Link style={linkColorStyles} to='/Register'>Register</Link></div>
       </div>
     </div>
   );

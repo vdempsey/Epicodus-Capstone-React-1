@@ -8,7 +8,7 @@ function Testimonial(props){
     displayWrap: 'wrap',
     flexDirection: 'row',
     color: '#404040',
-    width: "30%",
+    width: '30%',
     margin: '20px',
   };
   let imgTestimonialStyle = {

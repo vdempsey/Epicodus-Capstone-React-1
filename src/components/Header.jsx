@@ -1,6 +1,7 @@
 import React from 'react';
 import WebFont from 'webfontloader';
 import LogIn from './LogIn';
+import Register from './Register';
 import { Link } from 'react-router-dom';
 
 WebFont.load({
@@ -30,7 +31,7 @@ function Header(){
   return (
     <div style={headerComponentStyles}>
       <div><Link style={linkColorStyles} to='/'>Home</Link> | <Link style={linkColorStyles} to='/TestimonialList'>Testimonials</Link> | <Link style={linkColorStyles} to='/Contact'>Contact</Link></div>
-      <div><Link to='/Register'><div><LogIn /></div></Link></div>
+      <div><Link to='/Register'><LogIn /></Link></div>
     </div>
   );
 }
