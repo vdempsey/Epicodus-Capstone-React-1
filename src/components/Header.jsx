@@ -23,15 +23,20 @@ function Header(){
     display: 'flex',
     height: '35px',
     justifyContent: 'space-around',
-    alignItems: 'center'
+    alignItems: 'center',
   };
   let linkColorStyles = {
     color: '#fff',
-    textDecoration: 'none'
+    textDecoration: 'none',
+    paddingRight: '20px'
   };
   return (
     <div style={headerComponentStyles}>
-      <div><Link style={linkColorStyles} to='/'>Home</Link> | <Link style={linkColorStyles} to='/Contact'>Contact</Link></div>
+      <div>
+        <Link style={linkColorStyles} to='/'>Home</Link>
+        <Link style={linkColorStyles} to='/TestimonialList'>Testimonials</Link>
+        <Link style={linkColorStyles} to='/Contact'>Contact</Link>
+      </div>
       <div><Link to='/Register'><LogIn /></Link></div>
     </div>
   );

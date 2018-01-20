@@ -12,13 +12,9 @@ WebFont.load({
 
 function Menu(){
   let menuContainerStyles = {
-    fontFamily: '"Open Sans", sans-serif',
-    paddingTop: '20px',
-    color: '#404040',
-    paddingBottom: '20px',
-    fontSize: '25px',
     textAlign: 'center',
-    width: '100%'
+    width: '100%',
+    backgroundColor: '#f2f2f2'
   };
   let linkColorStyles = {
     color: '#404040',
@@ -32,13 +28,26 @@ function Menu(){
   };
   let menuLiStyles = {
     width: '20%',
+    padding: '20px',
+    fontFamily: '"Open Sans", sans-serif',
+    color: '#404040',
+    fontSize: '18px',
+    lineHeight: '20px',
+    margin: '0'
   };
+  let activeLiStyles = {
+    color: '#fff',
+    textDecoration: 'none',
+    backgroundColor: '#0090AA',
+    width: '300px',
+    padding: '20px'
+  }
   return (
     <div style={menuContainerStyles}>
       <div style={menuUlStyles}>
         <div style={menuLiStyles}><Link style={linkColorStyles} to='/'>WHY</Link></div>
         <div style={menuLiStyles}><Link style={linkColorStyles} to='/TestimonialList'>HOW</Link></div>
-        <div style={menuLiStyles}><Link style={linkColorStyles} to='/Register'>REGISTER</Link></div>
+        <div style={menuLiStyles}><Link style={activeLiStyles} to='/Register'>REGISTER</Link></div>
       </div>
     </div>
   );

@@ -17,15 +17,15 @@ function Banner(props){
       backgroundRepeat: 'no-repeat',
       backgroundPosition: 'center',
       backgroundColor: '#414142',
-      paddingTop: '40px'
+      paddingTop: '40px',
+      height: '330px'
     },
     childStyles: {
-      fontSize: '25px',
+      fontSize: '20px',
       textAlign: 'center',
       fontFamily: '"Open Sans", sans-serif',
       fontWeight: '300',
       color: 'rgba(255, 255, 255, 0.8)',
-      paddingBottom: '20px',
     }
   };
 
@@ -35,7 +35,7 @@ function Banner(props){
       <style jsx>{`
 
         img {
-          width: 300px;
+          width: 250px;
         }
 
       `}</style>

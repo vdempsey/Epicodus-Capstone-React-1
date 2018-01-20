@@ -5,17 +5,6 @@ import Menu from './Menu';
 
 
 function Splash(){
-
-  const styles = {
-    fontSize: '10px',
-    pStyle: {
-      color: 'red'
-    },
-    h2Style: {
-      color: 'blue',
-      fontSize: '80px'
-    }
-  };
   let mainLayoutComponentStyles = {
     margin: '0 auto',
     paddingTop: '50px',
