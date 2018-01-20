@@ -41,7 +41,7 @@ function Menu(){
     backgroundColor: '#0090AA',
     width: '300px',
     padding: '20px'
-  }
+  };
   return (
     <div style={menuContainerStyles}>
       <div style={menuUlStyles}>

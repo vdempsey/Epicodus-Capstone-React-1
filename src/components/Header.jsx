@@ -38,17 +38,17 @@ function Header(){
   let test = {
     display: 'flex',
     alignItems: 'center'
-  }
+  };
   return (
     <div style={headerComponentStyles}>
       <div>
         <Link style={linkColorStyles} to='/'>HOME</Link>
-        <Link style={linkColorStyles} to='/TestimonialList'>BLOG</Link>
+        <Link style={linkColorStyles} to='/Register'>BLOG</Link>
         <Link style={linkColorStyles} to='/Contact'>CONTACT</Link>
       </div>
       <div style={test}><Link style={linkButtonStyles} to='/'><LogIn /></Link>
-      <div>
-        <style jsx>{`
+        <div>
+          <style jsx>{`
           @import url('.././fonts/BebasNeue Bold.ttf');
 
           button {
@@ -68,7 +68,7 @@ function Header(){
           }
 
         `}</style>
-        <Link to='/Register'><button>Register</button></Link></div></div>
+          <Link to='/Register'><button>Register</button></Link></div></div>
     </div>
   );
 }

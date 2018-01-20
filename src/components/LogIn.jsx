@@ -10,7 +10,7 @@ function LogIn(){
   };
   const formStyle = {
     display: 'flex'
-  }
+  };
   return (
     <form style={formStyle}>
       <style jsx>{`
@@ -34,7 +34,7 @@ function LogIn(){
         }
 
       `}</style>
-    <input type="text" placeholder="Enter your user name" style={inputFields}></input>
+      <input type="text" placeholder="Enter your user name" style={inputFields}></input>
       <input type="text" placeholder="Enter your password" style={inputFields}></input>
       <button>LOGIN</button>
     </form>

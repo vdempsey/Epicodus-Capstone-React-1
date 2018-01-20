@@ -19,13 +19,18 @@ function Register(){
   let mainLayoutComponentStyles = {
     margin: '0 auto',
     paddingTop: '50px',
-    width: '100%'
+    width: '100%',
+  };
+  let registerFormStyle = {
+    width: '500px',
+    margin: '20px auto',
+    backgroundColor: 'red'
   };
   return (
     <div style={mainLayoutComponentStyles}>
       <BannerTwo bannerText='Activate your 8 to 5' />
       <Menu />
-      <RegisterForm />
+      <RegisterForm style={registerFormStyle} />
     </div>
   );
 }
