@@ -15,7 +15,6 @@ function App(){
       <Header/>
       <Switch>
         <Route exact path='/' component={Splash} />
-        <Route path='/TestimonialList' component={TestimonialList} />
         <Route path='/Contact' component={Contact} />
         <Route path='/Register' component={Register} />
         <Route component={Error404} />

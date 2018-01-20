@@ -3,20 +3,22 @@ import React from 'react';
 function RegisterForm(){
   return (
     <form>
-      <style jsx>{`
-        @import url('.././fonts/BebasNeue Bold.ttf');
-
-        button {
-          font-family: 'BebasNeue';
-        }
-
-        ::-webkit-input-placeholder {
-          color: #b5b5b5;
-        }
-
-      `}</style>
-      <input type="text" placeholder="Enter your user name"></input>
-      <input type="text" placeholder="Enter your password"></input>
+      <div>
+        <label>Name</label><br/>
+        <input type="text"></input>
+      </div>
+      <div>
+        <label>User Name</label><br/>
+        <input type="text"></input>
+      </div>
+      <div>
+        <label>Password</label><br/>
+        <input type="text"></input>
+      </div>
+      <div>
+        <label>Your Motto</label><br/>
+        <textarea></textarea>
+      </div>
       <button>LOGIN</button>
     </form>
   );
