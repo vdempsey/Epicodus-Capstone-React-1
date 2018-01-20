@@ -21,6 +21,7 @@ function Header(){
     position: 'fixed',
     width: '100%',
     display: 'flex',
+    flexDirection: 'row',
     height: '35px',
     justifyContent: 'space-around',
     alignItems: 'center',
@@ -30,14 +31,44 @@ function Header(){
     textDecoration: 'none',
     paddingRight: '20px'
   };
+  let linkButtonStyles = {
+    textDecoration: 'none',
+    paddingRight: '10px'
+  };
+  let test = {
+    display: 'flex',
+    alignItems: 'center'
+  }
   return (
     <div style={headerComponentStyles}>
       <div>
-        <Link style={linkColorStyles} to='/'>Home</Link>
-        <Link style={linkColorStyles} to='/TestimonialList'>Testimonials</Link>
-        <Link style={linkColorStyles} to='/Contact'>Contact</Link>
+        <Link style={linkColorStyles} to='/'>HOME</Link>
+        <Link style={linkColorStyles} to='/TestimonialList'>BLOG</Link>
+        <Link style={linkColorStyles} to='/Contact'>CONTACT</Link>
       </div>
-      <div><Link to='/Register'><LogIn /></Link></div>
+      <div style={test}><Link style={linkButtonStyles} to='/'><LogIn /></Link>
+      <div>
+        <style jsx>{`
+          @import url('.././fonts/BebasNeue Bold.ttf');
+
+          button {
+            font-family: 'BebasNeue';
+            padding: 8px 20px;
+            font-size: 17px;
+            letter-spacing: 0.5px;
+            color: #fff;
+            background-color: #0090AA;
+            border: none;
+            outline: none;
+            width: 100px;
+          }
+
+          ::-webkit-input-placeholder {
+            color: #b5b5b5;
+          }
+
+        `}</style>
+        <Link to='/Register'><button>Register</button></Link></div></div>
     </div>
   );
 }
