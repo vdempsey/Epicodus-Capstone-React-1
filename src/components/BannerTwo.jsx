@@ -18,30 +18,43 @@ function BannerTwo(props){
       backgroundRepeat: 'no-repeat',
       backgroundPosition: 'center',
       backgroundColor: '#414142',
-      paddingTop: '40px'
+      height: '220px',
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center'
     },
     childStyles: {
-      fontSize: '25px',
-      textAlign: 'center',
+      fontSize: '20px',
+      textAlign: 'left',
       fontFamily: '"Open Sans", sans-serif',
       fontWeight: '300',
       color: 'rgba(255, 255, 255, 0.8)',
-      paddingBottom: '20px',
+      marginTop: '-5px'
+
     },
     imgStyles: {
-      width: '120px'
+      paddingTop: '20px',
+      width: '120px',
+      marginRight: '20px'
     },
     logoTypeStyles: {
-      width: '300px'
+      width: '300px',
+      paddingTop: '20px'
     }
   };
 
 
   return(
-    <div style={styles.parentStyles}>
-      <img style={styles.imgStyles} src={logoSm} />
-      <img style={styles.logoTypeStyles} src={logoType} />
-      <p style={styles.childStyles}>{props.bannerText}</p>
+    <div>
+      <div style={styles.parentStyles}>
+        <div>
+          <img style={styles.imgStyles} src={logoSm} />
+        </div>
+        <div>
+          <img style={styles.logoTypeStyles} src={logoType} />
+          <p style={styles.childStyles}>{props.bannerText}</p>
+        </div>
+      </div>
     </div>
   );
 }
