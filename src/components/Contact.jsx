@@ -17,11 +17,19 @@ function Contact(){
     width: '100%',
     fontFamily: '"Open Sans", sans-serif',
   };
+  let contentStyle = {
+    width: '980px',
+    margin: '20px auto'
+  }
   return (
     <div style={mainLayoutComponentStyles}>
       <BannerTwo bannerText='Activate your 8 to 5' />
-      <h2>Some tagline goes here</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <div style={contentStyle}>
+        <h2>Some tagline goes here</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+      </div>
     </div>
   );
 }

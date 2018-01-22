@@ -46,7 +46,7 @@ function Menu(){
     <div style={menuContainerStyles}>
       <div style={menuUlStyles}>
         <div style={menuLiStyles}><Link style={linkColorStyles} to='/'>WHY</Link></div>
-        <div style={menuLiStyles}><Link style={linkColorStyles} to='/TestimonialList'>HOW</Link></div>
+        <div style={menuLiStyles}><Link style={linkColorStyles} to='/Register'>HOW</Link></div>
         <div style={menuLiStyles}><Link style={activeLiStyles} to='/Register'>REGISTER</Link></div>
       </div>
     </div>
