@@ -4,21 +4,23 @@ import PropTypes from 'prop-types';
 function Testimonial(props){
   let testimonialComponentStyles = {
     fontFamily: '"Open Sans", sans-serif',
+    fontWeight: '400',
     display: 'flex',
     displayWrap: 'wrap',
     flexDirection: 'row',
     color: '#404040',
-    width: '30%',
-    margin: '20px',
+    margin: '20px 20px 20px 0',
+    width: '30%'
   };
   let imgTestimonialStyle = {
     width: '90px',
-    height: '100px',
     paddingRight: '20px'
   };
   return(
     <div style={testimonialComponentStyles}>
-      <img style={imgTestimonialStyle} src={props.image} />
+      <div>
+        <img style={imgTestimonialStyle} src={props.image} />
+      </div>
       <div>
         <p>{props.quote}</p>
         <p>{props.name}</p>

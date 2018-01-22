@@ -30,6 +30,7 @@ function TestimonialList(){
     flexWrap: 'wrap',
     margin: '0 auto',
     justifyContent: 'center',
+    width: '1000px'
   };
   return (
     <div style={testimonialListComponentStyles}>

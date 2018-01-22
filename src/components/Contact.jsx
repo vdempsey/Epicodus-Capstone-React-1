@@ -19,14 +19,27 @@ function Contact(){
   };
   let contentStyle = {
     width: '980px',
-    margin: '20px auto'
+    margin: '40px auto'
+  };
+  let headlineStyle = {
+    fontFamily: '"Open Sans", sans-serif',
+    color: '#0090AA',
+    fontSize: '23px',
+    fontWeight: '300',
+    lineHeight: '20px',
+    margin: '0'
+  };
+  let bodyCopyStyle = {
+    fontSize: '16px',
+    lineHeight: '24px'
   }
+
   return (
     <div style={mainLayoutComponentStyles}>
       <BannerTwo bannerText='Activate your 8 to 5' />
       <div style={contentStyle}>
-        <h2>Some tagline goes here</h2>
-        <p>
+        <h2 style={headlineStyle}>Future Headline goes here</h2>
+        <p style={bodyCopyStyle}>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
         </p>
       </div>
